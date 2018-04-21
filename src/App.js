@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GamePage from './components/GamePage';
+import GuessPegs from './components/GuessPegs';
 
 let colorTable = [
   {name: 'Easy', colors: ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD']},
@@ -61,6 +62,7 @@ class App extends Component {
         <h1>Mastermind</h1>
         <GamePage 
           handleScoreClick={this.handleScoreClick}/>
+        <GuessPegs />
       </div>
     );
   }
